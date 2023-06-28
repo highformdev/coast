@@ -14,4 +14,4 @@ jobs:
           server-dir: public_html/coast/
           server: highform.com
           username: oclakeshore
-          password: ${{ secrets.ftp_password }}
+          password: ${{ secrets.ftp_password_live }}
