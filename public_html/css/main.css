@@ -138,7 +138,7 @@ body {
     font-size: 18px;
     font-weight: 300;
     line-height: 1.55;
-    letter-spacing: -0.05em;
+    letter-spacing: 0;
     color: #000000;
     text-align: left;
     background-color: #ffffff;
@@ -393,7 +393,7 @@ h1, h2, h3, h4, h5, h6,
     font-weight: 900;
     line-height: 1.1;
     letter-spacing: -0.01em;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 h1, .h1 {
     font-size: 100px;
@@ -10750,7 +10750,7 @@ input::placeholder {
     font-weight: 900;
     background: #7ccecd;
     border: 3px solid #7ccecd;
-    color: #222626;
+    color: #ffffff;
     border-radius: 20px;
     min-width: 170px;
     padding: 11px 15px;
@@ -11224,7 +11224,7 @@ input:focus::placeholder {
     padding-top: 100px;
 }
 .footer__contact-link-wrap:not(:last-child) {
-    margin-bottom: 27px;
+    margin-bottom: 15px;
 }
 .footer__copyright-icon-wrap {
     position: absolute;
@@ -11415,6 +11415,9 @@ input:focus::placeholder {
 }
 .header-logo-mobile {
     display: none;
+}
+.footer__main-logo-wrap img {
+    max-width: 118px;
 }
 /*-------------------------------------------------*/
 @media (min-width: 768px) {

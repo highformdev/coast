@@ -13,6 +13,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Coast at Lakeshore Commons | Premium Apartments Coming Soon to Oak Creek, WI</title>
+    <link rel="stylesheet" href="css/jquery.custom-select.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -410,6 +411,18 @@
                     <div class="form-group">
                         <input class="w-100" type="email" placeholder="Email" name="lead_email">
                     </div>
+                    <div class="form-group">
+                        <div class="w-100 select-custom-col select-apartment-js">
+                            <select class="select-custom d-none" data-placeholder="Unit Type">
+                                <option value="Studio">Studio</option>
+                                <option value="1 Bedroom">1 Bedroom</option>
+                                <option value="2 Bedroom">2 Bedroom</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="w-100" placeholder="Optional Comments"></textarea>
+                    </div>
                     <div class="form-group mb-0 form-group__btn-wrap  text-center">
                         <button type="submit" class="btn btn-form" name="Contact" id="frm-footer">Get Notified</button>
                         <input type="hidden" value="submit" name="Contact" id="footerName">
@@ -448,23 +461,27 @@
             </a>
             </div>
             <div class="col-auto mx-md-0 mx-auto footer__main-logo-wrap order-md-3 footer__col-2 order-2">
-                <img src="images/footer-main-logo.svg" alt="">
+                <img src="images/header-logo-light.png" alt="">
             </div>
             <div class="col-md-auto text-uppercase col-12 text-md-right text-center order-4 footer__col-3">
-                <!--                <div class="mb-3 pb-1 d-md-block d-none">-->
                 <div class="footer__contact-link-wrap">
                     <a class="link footer__contact-link" href="mailto:coast@oclakeshore.com">coast@oclakeshore.com</a>
                 </div>
-                <!--                </div>-->
-                <!--                <div class=" d-md-block d-none">-->
+                <div class="footer__contact-link-wrap">
+                    <a class="link footer__contact-link" href="tel:4142996399" target="_blank">
+                          <span class="d-inline-block">
+                             414-299-6399
+                          </span>
+                    </a>
+                </div>
                 <div class="footer__contact-link-wrap">
                     <a class="link footer__contact-link" href="https://goo.gl/maps/kAPCKfG2dhQ49hJb7" target="_blank">
                           <span class="d-inline-block">
                              9324 S Breakwater Blvd 
                               <br>Oak Creek, WI 53154
-                          </span> </a>
+                          </span>
+                    </a>
                 </div>
-                <!--                </div>-->
             </div>
             <div class="col-12 footer__copyright text-uppercase text-center order-last">
                 <span class="footer__copyright__wrap">
@@ -548,6 +565,7 @@
 <script src="js/map-1.js"></script>
 <script src="js/gsap.min.js"></script>
 <script src="js/ScrollTrigger.min.js"></script>
+<script src="js/jquery.custom-select.js"></script>
 <script src="js/main.js"></script>
 <script src="js/ajax-email.js"></script>
 </body>

@@ -54,7 +54,7 @@ if ($('[data-scrollto]').length) {
             {
                 scrollTop: idOffset
             },
-            2000
+            1000
         );
         return false;
     });
@@ -68,6 +68,25 @@ $(window).on('load', function () {
     //     })
     //     map.resize();
     // }
+    if($('.select-custom').length) {
+        $('.select-custom').each(function(i,el) {
+            $(el).customSelect({
+                placeholder: '<span class="placeholer-txt">' + $(el).data('placeholder') + '</span>',
+                transition: 400,
+                includeValue: true,
+                // hideCallback: function () {
+                //     var $value = $(this).find('[class$="value"]');
+                //     if ($(this).parents('.select-apartment-js').is('.select-apartment-js')) {
+                //         // console.log()
+                //         $('.select-price-js').attr('data-apartment-active', $($value).text())
+                //     }
+                //     // console.log(`Dropdown closed! Value text is "${$value.text()}".`);
+                // }
+            });
+        })
+        $('.select-custom-col').find('.custom-select').addClass('wow wowToUp');
+        $('.select-custom-col + .select-custom-col').find('.custom-select').addClass('td-1');
+    }
     $('html').addClass('page-load');
     // $('.second-bg').addClass('show');
     // if (window.innerWidth > 1199) {
