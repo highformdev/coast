@@ -11413,6 +11413,9 @@ input:focus::placeholder {
 .header-logo img {
     max-width: 135px;
 }
+.header-logo-mobile {
+    display: none;
+}
 /*-------------------------------------------------*/
 @media (min-width: 768px) {
     .footer__main-logo-wrap {
@@ -11758,6 +11761,12 @@ input:focus::placeholder {
     }
     .benefits-list__title {
         max-width: 100%;
+    }
+    .header-logo img {
+        display: none;
+    }
+    .header-logo .header-logo-mobile {
+        display: block;
     }
 }
 @media (max-width: 767px) {
