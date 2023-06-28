@@ -11463,7 +11463,7 @@ input:focus::placeholder {
     bottom: calc(100% + 14px);
 }
 .custom-select__dropdown {
-    top: calc(100% + 14px);
+    top: 100%;
     border-radius: 6px !important;
     background: #ededed;
     border: 1px solid #306d6f !important;
@@ -11494,6 +11494,7 @@ input:focus::placeholder {
 .custom-select {
     padding: 0;
     border: none;
+    height: auto;
 }
 @media (min-width: 768px) {
     .footer__main-logo-wrap {

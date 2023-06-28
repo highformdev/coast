@@ -84,8 +84,8 @@ $(window).on('load', function () {
                 // }
             });
         })
-        $('.select-custom-col').find('.custom-select').addClass('wow wowToUp');
-        $('.select-custom-col + .select-custom-col').find('.custom-select').addClass('td-1');
+        // $('.select-custom-col').find('.custom-select').addClass('wow wowToUp');
+        // $('.select-custom-col + .select-custom-col').find('.custom-select').addClass('td-1');
     }
     $('html').addClass('page-load');
     // $('.second-bg').addClass('show');
