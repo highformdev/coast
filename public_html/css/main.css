@@ -11440,8 +11440,6 @@ input:focus::placeholder {
 .custom-select__option.custom-select__option--value {
     padding-right: 70px;
     border-radius: 6px !important;
-    border: 1px solid #1C252C !important;
-    background: transparent !important;
 }
 .custom-select--active .custom-select__option.custom-select__option--value {
     background: #ffffff !important;
@@ -11453,8 +11451,8 @@ input:focus::placeholder {
     right: 0;
     height: 100%;
     width: 48px;
-    border-left: 1px solid #1C252C;
-    background: rgba(171, 161, 152, 0.3);
+    border-left: 1px solid #306d6f;
+    background: #ffffff;
     border-radius: 0 6px 6px 0;
 }
 .custom-select--dropup .custom-select__dropdown {
@@ -11463,8 +11461,8 @@ input:focus::placeholder {
 .custom-select__dropdown {
     top: calc(100% + 14px);
     border-radius: 6px !important;
-    background: #D5CFCA;
-    border: 1px solid #1C252C !important;
+    background: rgba(48, 109, 111, 0.5);
+    border: 1px solid #306d6f !important;
     -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.08);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.08);
     max-height: 330px;
@@ -11473,7 +11471,7 @@ input:focus::placeholder {
 .custom-select__dropdown .custom-select__option {
     background: #0000;
     border: none;
-    border-bottom: 1px solid #1C252C;
+    border-bottom: 1px solid #306d6f;
     border-radius: 0;
 }
 .custom-select__dropdown .custom-select__option:hover,
@@ -11488,6 +11486,10 @@ input:focus::placeholder {
 }
 .custom-select--active {
     z-index: 2;
+}
+.custom-select {
+    padding: 0;
+    border: none;
 }
 @media (min-width: 768px) {
     .footer__main-logo-wrap {
