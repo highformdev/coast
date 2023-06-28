@@ -11410,6 +11410,9 @@ input:focus::placeholder {
 .footer__col-3 {
     letter-spacing: 0;
 }
+.header-logo img {
+    max-width: 135px;
+}
 /*-------------------------------------------------*/
 @media (min-width: 768px) {
     .footer__main-logo-wrap {
