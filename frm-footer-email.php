@@ -31,7 +31,7 @@ if(isset($_POST['Contact']) && $_POST['Contact'] == 'submit')
         mb_internal_encoding("UTF-8");
     
         $message = '<html><body>';
-        $message .= '<div style="width: 4%; padding: 0px 0px 15px 0px" class="py-3"><img style="width: 250px;" src="https://coast.oclakeshore.com/images/header-logo.svg" alt="" class="footer-logo img-fluid"></div>';
+        $message .= '<div style="width: 4%; padding: 0px 0px 15px 0px" class="py-3"><img style="width: 250px;" src="https://coast.oclakeshore.com/images/email-logo.svg" alt="" class="footer-logo img-fluid"></div>';
         $message .= '<div style=" padding-top: 13px"><b>Inquiry received from The oclakeshore.com:</b><br><br></div>';
         $message .= '<table><tr><td align="right" valign="top" width="10%" style="padding-right: 10px; padding-left: 7px; background-color: #eaeaea; padding-top: 5px; padding-bottom: 5px;"><strong>First Name:</strong></td>';
         $message .= '<td>' . $_POST['lead_first_name'].'</td></tr>';
