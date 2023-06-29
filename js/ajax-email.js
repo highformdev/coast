@@ -29,9 +29,13 @@ $(document).ready(function () {
         ajaxRequest.done(function (data, textStatus, jqXHR) {
             console.log('Data is  '+data);
             var res = JSON.parse(data);
+            var word ="Thank you!"
             if(res.success_msg == 'true')
             {
-                $(".succesmsg").html("Thank you! <br> We've received your message and will reply asap.");
+                $(".succesmsg").html("Thank you! <br> We have received your message and will get back to you as soon as possible.");
+                $('.succesmsg:contains("Thank you!")').html(function(_, html) {
+                    return html.replace(/(Thank you!)/g, '<b style="font-weight: 800;">$1</b>');
+                });
                 $("#pre-footer").addClass('d-none');
                 $(".succesmsg").removeClass('d-none');
             }
