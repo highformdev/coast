@@ -69,9 +69,9 @@ if(isset($_POST['Contact']) && $_POST['Contact'] == 'submit')
             
                 //Recipients
                 $mail->setFrom('alert@highform.com', 'Highform Alert');
-                $mail->addAddress('test.thatsend@gmail.com', 'The oclakeshore');     //Add a recipient
+                $mail->addAddress('tjop@me.com', 'The oclakeshore');     //Add a recipient
                 $mail->addReplyTo($_POST['lead_email'], $_POST['lead_first_name']);
-                //$mail->addBCC('dev@highform.com');
+                $mail->addBCC('dev@highform.com');
             
                 //Content
                 $mail->isHTML(true);                                  //Set email format to HTML
